@@ -3,7 +3,7 @@ name: node-app Deployment
 on:
   push:
     branches:
-      - main
+      - master
 env:
   DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
   DOCKERHUB_KEY: ${{ secrets.DOCKER_KEY }}
