@@ -31,7 +31,7 @@ jobs:
 
       - name: Update values.yaml
         run: |
-          cd helm
+          cd nodeapp
           sed -i 's|APP_VERSION:.*|APP_VERSION: '${{ github.sha }}'|' values.yaml 
           git config --global user.name 'garagarohit'
           git config --global user.email 'garaga36@gmail.com'
